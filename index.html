@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Ma page HTML</title>
+        <link rel="stylesheet" href="style.css">gitn
+
+    <body>
+        <table>
+            <caption>
+                Registre des travailleurs
+            </caption>
+            <tr>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Shabani</td>
+                <td>Daniel</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>Nkosi</td>
+                <td>Gedeon</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>Kanga</td>
+                <td>Aimée</td>
+                <td>54</td>
+            </tr>
+        </table>
+
+        <form method="GET" action="http://localhost/apprentissage%20html_css/html_css2/index.html">
+            <fieldset>
+                <legend>Ici pour le texte</legend>
+                <p>
+                    <label for="nom">Entrer votre Nom: </label>
+                    <input type="text" name="nom" id="nom" placeholder="Shabani par exemple">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Ici pour le Numero de telephone</legend>
+                <p>
+                    <label for="tel">Votre Numero de telephone: </label>
+                    <input type="tel" name="tel" id="tel">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ici pour la date</legend>
+                <p>
+                    <label for="temps">Entrer la date: </label>
+                    <input type="date" name="date" id="temps" value="2023-01-01" min="2023-01-01" max="2023-12-31">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Ici pour le checkbox</legend>
+                <p>
+                    Qui aime-tu le plus?<br>
+                    <input type="checkbox" name="papa" id="papa"> <label for="papa">Papa</label><br>
+                    <input type="checkbox" name="maman" id="maman"><label for="maman">Maman</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Ici pour le radio</legend>
+                <p>
+                    <input type="radio" name="parent" id="papa" value="papa"><label for="papa">Papa</label><br>
+
+                    <input type="radio" name="parent" id="maman" value="maman"><label for="maman">Maman</label>
+
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Ici pour la liste deroulante</legend>
+                <p>
+                    <label for="province">Vous habitez dans quelle province?</label>
+                    <select name="province" id="province" onchange="alert('vous avez changer votre selection');">
+                        <option value="kivu">kivu</option>
+                        <option value="Kin" selected>Kinshasa</option>
+                        <option value="Equateur">Equateur</option>
+                    </select>
+                </p>
+            </fieldset><br>
+            <input type="submit" value="Envoyer" onclick="alert('vous allez partir sur une autre page');">
+
+
+
+        </form>
+
+    </body>
+    </head>
+
+</html>
