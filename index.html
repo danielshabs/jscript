@@ -38,14 +38,14 @@
                 <legend>Ici pour le texte</legend>
                 <p>
                     <label for="nom">Entrer votre Nom: </label>
-                    <input type="text" name="nom" id="nom" placeholder="Shabani par exemple">
+                    <input type="text" name="nom" id="nom" required="required" placeholder="Shabani par exemple">
                 </p>
             </fieldset>
             <fieldset>
                 <legend>Ici pour le Numero de telephone</legend>
                 <p>
                     <label for="tel">Votre Numero de telephone: </label>
-                    <input type="tel" name="tel" id="tel">
+                    <input type="tel" name="tel" id="tel" required="required">
                 </p>
             </fieldset>
 
@@ -84,7 +84,9 @@
                     </select>
                 </p>
             </fieldset><br>
-            <input type="submit" value="Envoyer" onclick="alert('vous allez partir sur une autre page');">
+            <input type="submit" value="Envoyer">
+            <!--input type="submit" value="Envoyer" onclick="alert('vous allez partir sur une autre page');">
+            
 
 
 
